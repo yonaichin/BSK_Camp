@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  root :to => "welcome#index"
-  get "welcome/" => "welcome#index"
+  root :to => "basketball#index"
 
   get "basketball/" => "basketball#index"
   get "basketball/coach" => "basketball#coach"

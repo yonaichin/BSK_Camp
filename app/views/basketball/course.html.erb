@@ -1,13 +1,33 @@
-<h1>course</h1>
-<div class="select-wrapper">
-   <div class="input-field col s12">
-    <select>
-      <option value="" >Choose your option</option>
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
-    </select>
-    <label>Materialize Select</label>
-  </div>
+<div class="row">
+	<form class="col s12">
+		<div class="input-field col s12">
+			<div class="select-wrapper">
+				<div class="input-field col s12">
+			    <select>
+			      <option value="" >Choose your option</option>
+			      <option value="1">Option 1</option>
+			      <option value="2">Option 2</option>
+			      <option value="3">Option 3</option>
+			    </select>
+			    <label>Materialize Select</label>
+			  </div>
+				<select class="browser-default">
+					<option value="" disabled selected>CHOOSE COURSE</option>
+					<option value="course-A">方案一</option>
+					<option value="course-B">方案二</option>
+					<option value="course-C">方案三</option>
+				</select>
+				<a class="dropdown-button btn" href="#" data-activates="dropdown1">Drop Me!</a>
+				<ul id='dropdown1' class='dropdown-content'>
+				    <li><a href="#!">one</a></li>
+				    <li><a href="#!">two</a></li>
+				    <li class="divider"></li>
+				    <li><a href="#!">three</a></li>
+				 </ul>
+			</div>			
+			<label>請選擇</label>
+		</div>
+	</form>
 </div>
 <%= javascript_include_tag 'course', 'data-turbolinks-track' => true %>
+
